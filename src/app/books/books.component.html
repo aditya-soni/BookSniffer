@@ -1,0 +1,11 @@
+<!--new catalogue books (this must be shown when new catalogue is clickd)--> 
+<app-new-catalogue-books-add *ngIf="editMode"></app-new-catalogue-books-add>
+<!--new catalogue books end-->
+
+<!--need a book list here which loads main screen books-->
+<div  *ngIf="!editMode">
+<div class="panel panel-default" *ngFor="let book of books">
+    <div class="panel-heading"> {{book.title}} </div>
+    <div class="panel-body"> {{book.description}} </div>
+</div>
+</div>

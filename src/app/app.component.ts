@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  showFeature:string='catalogue';
+
+  navigateTo(e:string){
+    this.showFeature=e;
+    console.log(this.showFeature);
+  }
+
 }

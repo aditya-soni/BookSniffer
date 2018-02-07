@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="panel panel-default">
+      <div class="panel-heading"> {{catalogueItem.title}} </div>
+      <div class="panel-body"> {{catalogueItem.description}}
+        <div *ngFor="let subdesc of catalogueItem.subdesc" >
+          {{subdesc.partTitle}} {{subdesc.partDesc}}
+        </div>
+        <div *ngFor="let book of catalogueItem.books" >
+          <b>{{book.title}}</b> - {{book.description}}
+        </div>
+        <div *ngFor="let story of catalogueItem.stories" >
+          <b>{{story.title}}</b> - {{story.description}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

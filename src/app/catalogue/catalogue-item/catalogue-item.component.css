@@ -1,0 +1,14 @@
+.panel-heading{
+    background: white;
+    text-transform: uppercase;
+    color: rgb(54, 128, 181);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+.panel{
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.22);
+    margin: 0px 0px 10px 0px;
+}

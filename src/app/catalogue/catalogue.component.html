@@ -1,0 +1,6 @@
+<router-outlet></router-outlet>
+<div *ngIf="mode==='main'">
+    <button class="btn btn-primary" style="margin-top:20px" type="button" (click)="onNewCatalogue()">New Catalogue</button>
+    <hr>
+    <app-catalogue-list></app-catalogue-list>
+</div>

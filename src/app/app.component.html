@@ -1,3 +1,60 @@
-<h1>
-  {{title}}
-</h1>
+<!-- header-->
+<div style="background:#4C93C5; height:96px; font-size:24px; color:white; padding:10px;" class="container-fluid" >
+  <div class="row">
+    <div class="col-xs-12">      
+      <i class="mdi mdi-menu" style="font-size:28px"></i>
+      <img src="http://cyberstudio.in/sniffer/images/top-logo.png"  style="max-height:27px; padding-left:10px; padding-bottom:5px">
+    </div>
+  </div>
+  <div class="row"  style="padding-top:5px">
+    <div class="col-xs-12">
+      <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-btn">
+          <button class="btn" type="button">
+            <i class="mdi mdi-magnify"></i>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!--header ends-->
+
+<!--navtabs start-->
+<div class="sticky-nav">
+  <div data-spy="affix" data-offset-top="96">    
+    <ul id="tabs" class="nav nav-tabs nav-justified" role="tablist">
+      
+      <li role="presentation">
+            <a href="#books" role="tab" data-toggle="tab" style="text-align:center">Books</a>
+      </li>
+
+      <li role="presentation" class="active">
+            <a href="#catalogue" role="tab" data-toggle="tab">Catalogue</a>
+      </li>
+
+      <li role="presentation">
+            <a href="#stories" role="tab" data-toggle="tab">Stories</a>     
+      </li>
+
+    </ul>
+  </div>
+  </div>
+<!--navtabs end-->
+
+<!--navtabs content start-->
+<div class="container-fluid" id="content">
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade " id="books">
+      <app-books></app-books>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in active" id="catalogue">
+      <app-catalogue></app-catalogue>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="stories">
+      <app-stories></app-stories>
+    </div>
+  </div>
+</div>
+<!--navtabs content ends-->

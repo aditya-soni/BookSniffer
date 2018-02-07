@@ -1,0 +1,17 @@
+<div class="row" style="margin-top:20px">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-primary" type="button" (click)="onAddBook()" *ngIf="!editMode" >New Book</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <router-outlet name="book"></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<app-books-list></app-books-list>
